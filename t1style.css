@@ -1,0 +1,355 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.navbar {
+    margin-top: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background: #555;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: url('images/#') no-repeat center center/cover;
+    color: #d7dbdd;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    background: red;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero .btn:hover {
+    background: darkred;
+}
+
+.ipl-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-container {
+    box-sizing: border-box;
+    margin: 5px;
+    border: 2px solid #000; /* optional for better visibility of the boxes */
+    text-align: center;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+}
+
+.image-container p {
+    margin: 5px 0 0 0;
+    font-size: 14px; /* adjust the font size as needed */
+}
+
+.image-container:nth-child(1),
+.image-container:nth-child(4),
+.image-container:nth-child(7) {
+    width: 28%;
+}
+
+.image-container:nth-child(2),
+.image-container:nth-child(8) {
+    width: 26.6%;
+}
+
+.image-container:nth-child(3),
+.image-container:nth-child(6),
+.image-container:nth-child(10) {
+    width: 34%;
+}
+
+.image-container:nth-child(5) {
+    width: 31%;
+}
+
+.image-container:nth-child(9) {
+    width: 32.5%;
+}
+
+
+/* Champions Section Styling */
+.champions {
+    background: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.champions h1 {
+    margin-bottom: 20px;
+}
+
+.champion-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.champion-item,
+.champion {
+    margin: 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.champion img,
+.champion-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.champion-item h2,
+.champion h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.champion-item p,
+.champion p {
+    font-size: 16px;
+}
+
+/* About Section Styling */
+.about {
+    padding: 40px;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+/* Contact Section Styling */
+.contact {
+    padding: 40px 20px; 
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.contact p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea, .contact button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .contact h2 {
+        font-size: 1.5em;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+}
+
+
+
+/* Points Table Section Styling */
+.points-table {
+    padding: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+.points-table h1 {
+    margin-bottom: 20px;
+}
+
+.points-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.points-table th, .points-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.points-table th {
+    background-color: #f2f2f2;
+}
+
+.points-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* News Section Styling */
+.news {
+    padding: 40px;
+    text-align: center;
+}
+
+.news h1 {
+    margin-bottom: 20px;
+}
+
+.news-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-item {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.news-item h2 {
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 18px;
+}
+
+/* Match Reports Section Styling */
+.match-reports {
+    padding: 40px;
+    text-align: center;
+}
+
+.match-reports h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.match-report-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.match-report-item {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    text-align: left;
+}
+
+.match-report-item h2 {
+    margin-bottom: 10px;
+}
+
+.match-report-item p {
+    font-size: 18px;
+}
+
+
+/* Footer Styling */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

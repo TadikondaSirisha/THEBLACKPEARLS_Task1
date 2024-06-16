@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - IPL 2024 Frenzy</title>
+    <link rel="stylesheet" href="t1style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="IPL Frenzy Logo">
+        </div>
+        <nav class="navbar">
+            <a href="t1home.html">Home</a>
+            <a href="t1news.html">News</a>
+            <a href="t1matchreport.html">Match Reports</a>
+            <a href="t1pc.html">Champions</a>
+            <a href="t1contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h1 style="font-size:50px; text-align:center;">Contact Us</h1>
+        <div class="contact-form">
+            <form action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <p>If you have any questions, feel free to reach out to us at <a href="mailto:info@iplfrenzy.com">info@iplfrenzy.com</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 IPL Frenzy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
